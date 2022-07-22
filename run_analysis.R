@@ -62,6 +62,6 @@ avg_tidy <- df_long %>%
   summarise(average = mean(value))
 
 # saving the datasets
-write.csv(df, './full_dataset.csv', row.names = FALSE)
-write.csv(avg_tidy, './summarised_dataset.csv', row.names = FALSE)
+write.table(df, './full_dataset.txt', row.names = FALSE)
+write.table(avg_tidy, './summarised_dataset.txt', row.names = FALSE)
 
