@@ -16,6 +16,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Before reading any of the datasets we need to load the following complimentary information:
 
+0.0 download and unzip dataset
 0.1 descriptive activity names form 'UCI HAR Dataset/activity_labels.txt'
 0.2. variables' names form "UCI HAR Dataset/features_info.txt"
 

@@ -1,6 +1,17 @@
 library(reshape2)
 library(dplyr)
 
+# downloading dataset
+dataset_zip_fn <- 'dataset.zip'
+url <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+
+if (!file.exists(dataset_zip_fn)) {
+  download.file(url, dataset_zip_fn)
+}
+
+# unzipping dataset
+unzip(dataset_zip_fn)
+
 # setting paths variables
 data_root <- './UCI HAR Dataset/'
 train_root <- paste0(data_root, 'train/')
@@ -9,7 +20,7 @@ test_root <- paste0(data_root, 'test/')
 # function for importing the datasets
 read_dataset <- function (root, activity_lab, feature_lab, dataset_fn,
                           activity_col_fn, subject_col_fn) {
-  widths = rep(16, nrow(feature_lab))
+  widths <- rep(16, nrow(feature_lab))
   dataset <- read.fwf(paste0(root, dataset_fn), 
                       widths = widths, 
                       header = FALSE)
