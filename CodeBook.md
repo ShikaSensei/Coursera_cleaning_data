@@ -58,13 +58,13 @@ Steps taken to import the training dataset ('UCI HAR Dataset/test'):
 
 ### Saving data
 
-1. Resulted tidy and filtered wide dataset is saved to 'full_dataset.csv'
-2. Summirised tidy dataset is saved to 'summarised_dataset.csv'
+1. Resulted tidy and filtered wide dataset is saved to 'full_dataset.txt'
+2. Summirised tidy dataset is saved to 'summarised_dataset.txt'
 
 
 ## Data Description
 
-### full_dataset.csv
+### full_dataset.txt
 
 The dataset consists of 68 columns:
 
@@ -149,7 +149,7 @@ Descriptions for following values are available in 'UCI HAR Dataset/features_inf
 67. *fBodyBodyGyroJerkMag_mean*
 68. *fBodyBodyGyroJerkMag_std*
 
-### summarised_dataset.csv
+### summarised_dataset.txt
 
 Contains summarised data, showing the average of each variable for each activity and each subject. The dataset contains 4 columns:
 
