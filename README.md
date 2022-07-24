@@ -17,7 +17,9 @@ It saves the full wide dataset to full_dataset.txt and summarised dataset to sum
 
 R package requirements are reshape2 and dplyr.
 
-I am planing to do this programming assignment in Python in near future.
+## run_analysis.py
+
+Python script which does the same thing as run_analysis.R
 
 ## CodeBook.md
 
